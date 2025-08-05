@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Bintang</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 95vh;
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      overflow: hidden;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 50px;
+      font-size: 49px;
+      text-shadow: 0 0 10px white;
+    }
+
+    .stars {
+      width: 2%;
+      height: 1%;
+      background: transparent;
+      box-shadow: 
+        100px 200px white,
+        150px 300px white,
+        200px 400px white,
+        250px 150px white,
+        300px 100px white,
+        400px 250px white,
+        500px 350px white,
+        600px 100px white,
+        700px 200px white,
+        800px 300px white;
+      animation: moveStars 4s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from {
+        transform: translateY(1);
+      }
+      to {
+        transform: translateY(-90px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <h1>Bintang</h1>
+</body>
+</html>
